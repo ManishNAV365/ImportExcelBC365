@@ -12,6 +12,7 @@ report 50100 AgentImport
             DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
             trigger OnPreDataItem()
             begin
+                //Reading Excel
                 ReadExcelBook();
             end;
 
